@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Embedded Systems</title>
+	<meta charset="utf-8" />
+	<link rel="Stylesheet" type="text/css" href="Cube.css" />
+
+</head>
+	<body>
+		<div class="wrapper">
+			<div class="cube">
+				<b class="front"></b>
+				<b class="back"></b>
+				<b class="top"></b>
+				<b class="bottom"></b>
+				<b class="left"></b>
+				<b class="right"></b>	
+					
+				<i class="front">House</i>
+				<i class="back">Alarm</i>
+				<i class="top"></i>
+				<i class="bottom"></i>
+				<i class="left">Shutters</i>
+				<i class="right">Temperature</i>
+			</div>
+		</div>
+
+		<table>
+			<tr>
+				<td>
+					<h2>Volets</h2>
+					<p id="demoVolet">Automatic mode (default)</p>
+					<input type="submit" name="buttonAuto" id="buttonAuto"  class="button" value="Automatique" onclick="ButtonAuto()"/>
+					<input type="submit" name="buttonManu" id="buttonManu"  class="button" value="Manuel" onclick="ButtonManu()"/>
+					<input type="submit" name="buttonOpen" id="buttonOpen"  class="button" value="ON" onclick="ButtonOpen()"/>
+					<input type="submit" name="buttonClose" id="buttonClose"  class="button" value="OFF" onclick="ButtonClose()"/>		
+				</td>
+				
+				<td>
+					<h2>Temperature</h2>
+					<p id="demoTemp">Temperature (default)</p>
+					Min value:<br>
+					<input type="text" name="valMin" id="valMin"  class="text temperature" /><br>	
+					Max value:<br>
+					<input type="text" name="valMax" id="valMax"  class="text temperature" />
+					<input type="submit" name="update values" id="values"  class="button" value="Values" onclick="Values()"/>
+				</td>
+	
+				<td>
+					<h2>Alarme</h2>
+					<p id="demoAlarm">OFF (default)</p>
+					<input type = "submit" name="buttonAlarmOn" id="buttonAlarmOn"  class="button" value="ON" onclick="ButtonAlarmOn()"/>
+					<input type = "submit" name="buttonAlarmOff" id="buttonAlarmOff"  class="button" value="OFF" onclick="ButtonAlarmOff()"/> 
+				</td>
+			</tr>
+		</table>
+		
+		<script src="EmbeddedSystem.js"></script>
+	</body>
+</html>

@@ -4,7 +4,7 @@
 			document.getElementById("demoVolet").innerHTML = "Automatic mode";
 		   $("#buttonAuto").click(
 		   $.ajax({
-			   url: '.../buttonAuto.php',
+			   url: '.../Shutters.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -16,7 +16,7 @@
 			document.getElementById("demoVolet").innerHTML = "Manuel mode";
 		   $("#buttonManu").click(
 		   $.ajax({
-			   url: '.../buttonManu.php',
+			   url: '.../Shutters.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -27,7 +27,7 @@
 		{
 		   $("#buttonOn").click(
 		   $.ajax({
-			   url: '.../buttonOpen.php',
+			   url: '.../Shutters.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -38,7 +38,7 @@
 		{
 		   $("#buttonOff").click(
 		   $.ajax({
-			   url: '.../buttonClose.php',
+			   url: '.../Shutters.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -52,7 +52,7 @@
 			document.getElementById("demoTemp").innerHTML = "Values updated";
 		   $("#values").click(
 		   $.ajax({
-			   url: '.../values.php',
+			   url: '.../Température.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -66,7 +66,7 @@
 			document.getElementById("demoAlarm").innerHTML = "Alarm ON";
 		   $("#buttonAlarmOn").click(
 		   $.ajax({
-			   url: '.../buttonAlarmOn.php',
+			   url: '.../Alarm.php',
 			   success: function(data) {
 				  //do something
 			   }
@@ -79,7 +79,7 @@
 			document.getElementById("demoAlarm").innerHTML = "Alarm OFF";
 		   $("#buttonAlarmOff").click(
 		   $.ajax({
-			   url: '.../buttonAlarmOff.php',
+			   url: '.../Alarm.php',
 			   success: function(data) {
 				  //do something
 			   }
